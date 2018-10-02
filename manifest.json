@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Busybody",
+  "version": "1.0",
+
+  "description": "Hides your events from prying eyes.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://calendar.google.com/*"],
+      "js": ["busybody.js"]
+    }
+  ]
+
+}
