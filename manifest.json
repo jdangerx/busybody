@@ -11,6 +11,7 @@
 
   "content_scripts": [
     {
+      "run_at": "document_end",
       "matches": ["*://calendar.google.com/*"],
       "js": ["busybody.js"]
     }
